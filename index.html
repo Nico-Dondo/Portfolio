@@ -36,7 +36,7 @@
                     <div class="redes">
                         <a href="https://www.linkedin.com/in/nicolas-dondo/"><i class="fa-brands fa-linkedin"></i><a>
                                 <a href="https://github.com/Nico-Dondo"><i class="fa-brands fa-github"></i></a>
-                                
+
                     </div>
                 </div>
             </header>
@@ -137,12 +137,16 @@
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio">
         <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <br>
+        <br>
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
                 <img src="img/martinez.jpg" alt="">
                 <div class="info">
-                    <button class="button" onclick="location.href='img/Proyectos/Proyecto Final QA Dondo Nicolas.pdf'" >Ver proyecto</button>
+                    <button class="button"
+                        onclick="location.href='img/Proyectos/Proyecto Final QA Dondo Nicolas.pdf'">Ver
+                        proyecto</button>
 
                 </div>
             </div>
@@ -162,34 +166,28 @@
                 <div class="overlay"></div>
                 <img src="img/pizza.jpg" alt="">
                 <div class="info">
-                    <button class="button"
-                        onclick="location.href='img/Proyectos/Prueba_Tecnica.pdf'">Ver
+                    <button class="button" onclick="location.href='img/Proyectos/Prueba_Tecnica.pdf'">Ver
                         proyecto</button>
                 </div>
             </div>
-           
+
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/pizza.jpg" alt="">
+                <img src="img/vrvjpg.jpg" alt="">
                 <div class="info">
-                    <button class="button"
-                        onclick="location.href=''">Ver
-                        proyecto</button>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/pizza.jpg" alt="">
-                <div class="info">
-                    <button class="button"
-                        onclick="location.href=''">Ver
-                        proyecto</button>
+                    <button class="button" onclick="location.href='https://www.buenosairesvrv.com.ar/'">Link a la
+                        página</button>
+
+
+                    <div class="descripcion-section" id="descripcion">
+                        <p>Trabajo realizado para <strong>CodeCraze Developers</strong> encargándome de realizar el
+                            testeo integral de página, funcionalidades, en armonía con los desarrolladores.</p>
+                    </div>
+
                 </div>
             </div>
 
         </div>
-
-
         </div>
     </section>
 
@@ -197,36 +195,37 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contacto</h3>
         <div class="contenedor-form">
-          <form id="formulario" action="mailto:tu-correo@example.com" method="get">
-            <div class="fila mitad">
-              <input type="text" placeholder="Nombre Completo *" class="input-mitad" name="nombre">
-              <input type="email" placeholder="Dirección de Email" class="input-mitad" name="email">
-            </div>
-            <div class="fila">
-              <textarea name="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
-            </div>
-            <button type="submit" class="btn-enviar" onclick="enviarCorreo()">Enviar</button>
-          </form>
+            <form id="formulario" action="mailto:tu-correo@example.com" method="get">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad" name="nombre">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad" name="email">
+                </div>
+                <div class="fila">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <button type="submit" class="btn-enviar" onclick="enviarCorreo()">Enviar</button>
+            </form>
         </div>
-      </section>
-      
-      <script>
+    </section>
+
+    <script>
         function enviarCorreo() {
-          var nombre = document.getElementsByName('nombre')[0].value;
-          var email = document.getElementsByName('email')[0].value;
-          var mensaje = document.getElementsByName('mensaje')[0].value;
-      
-          var destinatario = 'tu-correo@example.com';
-          var asunto = 'Mensaje de ' + nombre + ' (' + email + ')';
-          var cuerpo = mensaje;
-      
-          var mailtoURL = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
-      
-          window.location.href = mailtoURL;
+            var nombre = document.getElementsByName('nombre')[0].value;
+            var email = document.getElementsByName('email')[0].value;
+            var mensaje = document.getElementsByName('mensaje')[0].value;
+
+            var destinatario = 'tu-correo@example.com';
+            var asunto = 'Mensaje de ' + nombre + ' (' + email + ')';
+            var cuerpo = mensaje;
+
+            var mailtoURL = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
+
+            window.location.href = mailtoURL;
         }
-      </script>
-      
-    
+    </script>
+
+
 
     <!-- SECCION FOOTER -->
     <footer>
@@ -234,13 +233,13 @@
         <div class="redes">
             <a href="https://www.linkedin.com/in/nicolas-dondo/"><i class="fa-brands fa-linkedin"></i><a>
                     <a href="https://github.com/Nico-Dondo"><i class="fa-brands fa-github"></i></a>
-                   
+
         </div>
 
     </footer>
 
     <script src="script.js"></script>
-   
+
 </body>
 
 </html>

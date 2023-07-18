@@ -413,7 +413,7 @@
         
         #portfolio .fila {
             display: grid;
-            grid-template-columns: repeat(5, 1fr); /* Corregir espacio después de 'repeat' */
+            grid-template-columns: repeat(4, 1fr); /* Corregir espacio después de 'repeat' */
             gap: 20px;
         }
         

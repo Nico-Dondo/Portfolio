@@ -70,10 +70,13 @@ function efectoHabilidades() {
   }
 
 
-// Agrega un event listener al botón para invocar la función enviarFormulario cuando se haga clic
+
 document.getElementById("miBoton").addEventListener("click", enviarFormulario);
 
-
+function scrollToDescripcion() {
+  const descripcionSection = document.getElementById('descripcion');
+  descripcionSection.scrollIntoView({ behavior: 'smooth' });
+}
 
   
   
