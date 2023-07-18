@@ -55,23 +55,18 @@ function efectoHabilidades() {
   }
   
   
+ 
+
   function enviarCorreo() {
-    var nombre = document.getElementsByName('nombre')[0].value;
-    var email = document.getElementsByName('email')[0].value;
-    var mensaje = document.getElementsByName('mensaje')[0].value;
+    const destinatario = "nicodondo1980@gmail.com"; // Reemplaza con tu dirección de correo electrónico
+    const asunto = "Mensaje de un visitante del sitio";
+    const cuerpo = "Este es el cuerpo del mensaje.";
 
-    var destinatario = 'nicodondo1980@gmail.com';
-    var asunto = 'Mensaje de ' + nombre + ' (' + email + ')';
-    var cuerpo = mensaje;
-
-    var mailtoURL = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
-
-    window.location.href = mailtoURL;
-  }
+    const mailtoUrl = `mailto:${encodeURIComponent(destinatario)}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+    window.location.href = mailtoUrl;
+}
 
 
-
-document.getElementById("miBoton").addEventListener("click", enviarFormulario);
 
 function scrollToDescripcion() {
   const descripcionSection = document.getElementById('descripcion');
