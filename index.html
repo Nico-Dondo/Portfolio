@@ -193,11 +193,39 @@
 
     <!-- SECCTION C O N T A C T O -->
     <section id="contacto">
-        <button class="btn-enviar" onclick="enviarCorreo()">Contacto</button>
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form id="formulario" action="mailto:tu-correo@example.com" method="get">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad" name="nombre">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad" name="email">
+                </div>
+                <div class="fila">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <button type="submit" class="btn-enviar" onclick="enviarCorreo()">Enviar</button>
+            </form>
+        </div>
     </section>
-    
-   
-    
+
+    <script>
+        function enviarCorreo() {
+            var nombre = document.getElementsByName('nombre')[0].value;
+            var email = document.getElementsByName('email')[0].value;
+            var mensaje = document.getElementsByName('mensaje')[0].value;
+
+            var destinatario = 'tu-correo@example.com';
+            var asunto = 'Mensaje de ' + nombre + ' (' + email + ')';
+            var cuerpo = mensaje;
+
+            var mailtoURL = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
+
+            window.location.href = mailtoURL;
+        }
+    </script>
+
+
 
     <!-- SECCION FOOTER -->
     <footer>
