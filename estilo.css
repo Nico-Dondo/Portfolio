@@ -670,16 +670,4 @@
                 margin-bottom: 15px;
             }
         }
-        .btn-enviar {
-            padding: 12px 24px; /* Ajusta el tamaño del padding para hacer el botón más grande */
-            font-size: 18px; /* Tamaño de fuente */
-            background-color: #007bff; /* Color de fondo del botón */
-            color: #fff; /* Color del texto del botón */
-            border: none; /* Quita el borde del botón */
-            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-            border-radius: 4px; /* Agrega bordes redondeados al botón */
-        }
-
-        .btn-enviar:hover {
-            background-color: #0056b3; /* Cambia el color de fondo al pasar sobre el botón */
-        }
+        
