@@ -498,8 +498,12 @@
         }
         
         #cursos .fila .proyecto {
+            display: flex; /* Utilizamos flexbox para centrar verticalmente */
+            flex-direction: column; /* Apilamos elementos verticalmente */
+            justify-content: center; /* Centramos verticalmente */
+            align-items: center; /* Centramos horizontalmente */
             width: 100%;
-            max-width: 700px;
+            max-width: 300px; /* Ajusta el tamaño máximo según tus necesidades */
             border: 1px solid #000;
             margin: 0 10px;
             position: relative;
@@ -508,14 +512,14 @@
         
         #cursos .fila .proyecto img {
             width: 100%;
-            height: 100%;
+            height: auto; /* Asegura que la imagen mantenga su proporción de aspecto */
             filter: grayscale(1);
-            object-fit: contain;
-            transition: .5s;
+            transition: filter 0.5s, transform 0.5s; /* Agregamos la transición para el efecto de zoom */
         }
         
         #cursos .fila .proyecto:hover img {
             filter: grayscale(0);
+            transform: scale(1.05); /* Efecto de zoom al hacer hover */
         }
         
         #cursos .fila .proyecto .info {
