@@ -72,6 +72,20 @@ function scrollToDescripcion() {
   const descripcionSection = document.getElementById('descripcion');
   descripcionSection.scrollIntoView({ behavior: 'smooth' });
 }
+function redirectToCertification(certificacion) {
+  switch (certificacion) {
+      case 'certificacion1':
+          window.location.href = "https://www.coderhouse.com/certificados/64aef6ae10d18f0002b41b3f";
+          break;
+      case 'certificacion2':
+          window.location.href = "URL_CERTIFICACION_2";
+          break;
+      // Agrega más casos para las otras certificaciones
+
+      default:
+          break;
+  }
+}
 
   
   

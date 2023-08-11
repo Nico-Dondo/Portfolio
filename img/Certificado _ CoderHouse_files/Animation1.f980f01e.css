@@ -1,0 +1,1 @@
+.glow{animation:glow 4.1s ease-out .5s;animation-fill-mode:forwards}@keyframes glow{0%{opacity:0}10%{opacity:1}to{opacity:.4}}

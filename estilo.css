@@ -473,7 +473,92 @@
             color: #fff;
         }
         
+        /*SECCION CURSOS*/
 
+        #cursos {
+            max-width: 1100px;
+            padding: 100px 0;
+            margin: auto;
+        }
+        
+        #cursos .titulo-seccion {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration: underline;
+            text-decoration-color: #d3d3d3;
+            text-decoration-thickness: 5px;
+        }
+        
+        #cursos .fila {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        #cursos .fila .proyecto {
+            width: 100%;
+            max-width: 700px;
+            border: 1px solid #000;
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #cursos .fila .proyecto img {
+            width: 100%;
+            height: 100%;
+            filter: grayscale(1);
+            object-fit: contain;
+            transition: .5s;
+        }
+        
+        #cursos .fila .proyecto:hover img {
+            filter: grayscale(0);
+        }
+        
+        #cursos .fila .proyecto .info {
+            position: absolute;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ff5080;
+            width: 100%;
+            padding: 10px;
+            opacity: 0;
+            bottom: -40px;
+            transition: .5s;
+        }
+        
+        #cursos .fila .proyecto:hover .info {
+            opacity: 1;
+            bottom: 0;
+        }
+        
+        #cursos .fila .proyecto .info .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid #007bff;
+            color: #007bff;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            margin-right: 10px; /* Agregamos un margen derecho para separar los botones */
+        }
+        
+        #cursos .fila .proyecto .info .button:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+        #cursos .fila .proyecto img:hover {
+            filter: grayscale(0);
+            transform: scale(1.1); /* Cambio de escala al hacer hover */
+        }
+        
+        
 
         /* *********************/
         /* seccion C O N T A C T O */
@@ -669,19 +754,5 @@
                 width: 100%;
                 margin-bottom: 15px;
             }
-            /* Flexbox alignment for icons */
-.redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Adjust styles for smaller screens */
-@media (max-width: 768px) {
-    .redes {
-        text-align: center; /* Center the icons */
-    }
-}
-
         }
         

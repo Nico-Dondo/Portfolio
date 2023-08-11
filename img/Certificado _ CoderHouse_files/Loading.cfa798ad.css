@@ -1,0 +1,1 @@
+.in{animation-duration:15s;animation-fill-mode:forwards;animation-name:in;animation-timing-function:cubic-bezier(0,1,1,1)}.finish,.in{transform-origin:left}.finish{animation-duration:1s;animation-fill-mode:forwards;animation-name:finish;animation-timing-function:linear}@keyframes in{0%{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes finish{to{transform:scaleX(1)}}
