@@ -522,45 +522,61 @@
             transform: scale(1.05); /* Efecto de zoom al hacer hover */
         }
         
-        #cursos .fila .proyecto .info {
-            position: absolute;
-            left: 0px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #ff5080;
-            width: 100%;
-            padding: 10px;
-            opacity: 0;
-            bottom: -40px;
-            transition: .5s;
-        }
-        
-        #cursos .fila .proyecto:hover .info {
-            opacity: 1;
-            bottom: 0;
-        }
-        
-        #cursos .fila .proyecto .info .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: transparent;
-            border: 2px solid #007bff;
-            color: #007bff;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-            margin-right: 10px; /* Agregamos un margen derecho para separar los botones */
-        }
-        
-        #cursos .fila .proyecto .info .button:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
-        #cursos .fila .proyecto img:hover {
-            filter: grayscale(0);
-            transform: scale(1.1); /* Cambio de escala al hacer hover */
-        }
+        /* Estilos para los títulos de los cursos */
+#cursos .fila .proyecto .info {
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#cursos .fila .proyecto .info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cursos .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 767px) {
+    #cursos .fila .proyecto .info {
+        position: static;
+        background-color: transparent;
+        color: #007bff;
+        padding: 10px 0;
+        text-align: center;
+        border-top: 1px solid #ccc;
+        margin-top: 10px;
+    }
+    
+    #cursos .fila .proyecto .info .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid #007bff;
+        color: #007bff;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    
+    #cursos .fila .proyecto .info .button:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+}
+
         
         
 
