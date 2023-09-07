@@ -400,7 +400,7 @@
             padding: 100px 0;
             margin: auto;
         }
-        
+
         #portfolio .titulo-seccion {
             text-align: center;
             font-size: 22px;
@@ -410,22 +410,24 @@
             text-decoration-color: #d3d3d3;
             text-decoration-thickness: 5px;
         }
-        
+
         #portfolio .fila {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Corregir espacio después de 'repeat' */
+            grid-template-columns: repeat(4, 1fr);
+            /* Corregir espacio después de 'repeat' */
             gap: 20px;
         }
-        
+
         #portfolio .fila .proyecto {
-            width: 100%; /* Cambiar 'max-width' a 'width' */
+            width: 100%;
+            /* Cambiar 'max-width' a 'width' */
             max-width: 700px;
             border: 1px solid #000;
             margin: 0 10px;
             position: relative;
             overflow: hidden;
         }
-        
+
         #portfolio .fila .proyecto img {
             width: 100%;
             height: 100%;
@@ -433,11 +435,11 @@
             object-fit: contain;
             transition: .5s;
         }
-        
+
         #portfolio .fila .proyecto:hover img {
             filter: grayscale(0);
         }
-        
+
         #portfolio .fila .proyecto .info {
             position: absolute;
             left: 0px;
@@ -449,12 +451,12 @@
             bottom: -40px;
             transition: .5s;
         }
-        
+
         #portfolio .fila .proyecto:hover .info {
             opacity: 1;
             bottom: 0;
         }
-        
+
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -467,12 +469,12 @@
             transition: background-color 0.3s ease;
             cursor: pointer;
         }
-        
+
         .button:hover {
             background-color: #007bff;
             color: #fff;
         }
-        
+
         /*SECCION CURSOS*/
 
         #cursos {
@@ -480,7 +482,7 @@
             padding: 100px 0;
             margin: auto;
         }
-        
+
         #cursos .titulo-seccion {
             text-align: center;
             font-size: 22px;
@@ -490,95 +492,89 @@
             text-decoration-color: #d3d3d3;
             text-decoration-thickness: 5px;
         }
-        
+
         #cursos .fila {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
-        
+
         #cursos .fila .proyecto {
-            display: flex; /* Utilizamos flexbox para centrar verticalmente */
-            flex-direction: column; /* Apilamos elementos verticalmente */
-            justify-content: center; /* Centramos verticalmente */
-            align-items: center; /* Centramos horizontalmente */
+            display: flex;
+            /* Utilizamos flexbox para centrar verticalmente */
+            flex-direction: column;
+            /* Apilamos elementos verticalmente */
+            justify-content: center;
+            /* Centramos verticalmente */
+            align-items: center;
+            /* Centramos horizontalmente */
             width: 100%;
-            max-width: 300px; /* Ajusta el tamaño máximo según tus necesidades */
+            max-width: 300px;
+            /* Ajusta el tamaño máximo según tus necesidades */
             border: 1px solid #000;
             margin: 0 10px;
             position: relative;
             overflow: hidden;
         }
-        
+
         #cursos .fila .proyecto img {
             width: 100%;
-            height: auto; /* Asegura que la imagen mantenga su proporción de aspecto */
+            max-width: 100%;
+            height: auto;
             filter: grayscale(1);
-            transition: filter 0.5s, transform 0.5s; /* Agregamos la transición para el efecto de zoom */
+            transition: filter 0.5s, transform 0.5s;
         }
-        
+
         #cursos .fila .proyecto:hover img {
             filter: grayscale(0);
-            transform: scale(1.05); /* Efecto de zoom al hacer hover */
+            transform: scale(1.05);
+            /* Efecto de zoom al hacer hover */
         }
-        
-        /* Estilos para los títulos de los cursos */
-#cursos .fila .proyecto .info {
-    position: absolute;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #ff5080;
-    width: 100%;
-    padding: 10px;
-    opacity: 0;
-    bottom: -40px;
-    transition: .5s;
-}
 
-#cursos .fila .proyecto .info a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+        #cursos .fila .proyecto .info {
+            position: absolute;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ff5080;
+            width: 100%;
+            padding: 10px;
+            opacity: 0;
+            bottom: -40px;
+            transition: .5s;
+        }
 
-#cursos .fila .proyecto:hover .info {
-    opacity: 1;
-    bottom: 0;
-}
+        #cursos .fila .proyecto:hover .info {
+            opacity: 1;
+            bottom: 0;
+        }
 
-/* Estilos para la versión móvil */
-@media (max-width: 767px) {
-    #cursos .fila .proyecto .info {
-        position: static;
-        background-color: transparent;
-        color: #007bff;
-        padding: 10px 0;
-        text-align: center;
-        border-top: 1px solid #ccc;
-        margin-top: 10px;
-    }
-    
-    #cursos .fila .proyecto .info .button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: transparent;
-        border: 2px solid #007bff;
-        color: #007bff;
-        font-size: 16px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
-        margin: 0 auto;
-    }
-    
-    #cursos .fila .proyecto .info .button:hover {
-        background-color: #007bff;
-        color: #fff;
-    }
-}
+        #cursos .fila .proyecto .info .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid #007bff;
+            color: #007bff;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            margin-right: 10px;
+            /* Agregamos un margen derecho para separar los botones */
+        }
 
-        
-        
+        #cursos .fila .proyecto .info .button:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        #cursos .fila .proyecto img:hover {
+            filter: grayscale(0);
+            transform: scale(1.1);
+            /* Cambio de escala al hacer hover */
+        }
+
+
 
         /* *********************/
         /* seccion C O N T A C T O */
@@ -775,4 +771,17 @@
                 margin-bottom: 15px;
             }
         }
-        
+
+        @media (max-width: 768px) {
+            #cursos .fila .proyecto .info {
+                font-size: 14px;
+            }
+        }
+
+        /* Estilo para dispositivos móviles */
+        @media (max-width: 768px) {
+            #inicio .contenido header .contenido-header .redes a {
+                font-size: 14px;
+                /* Ajusta el tamaño de fuente para dispositivos móviles */
+            }
+        }
