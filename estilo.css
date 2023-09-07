@@ -785,3 +785,30 @@
                 /* Ajusta el tamaño de fuente para dispositivos móviles */
             }
         }
+        /* Estilos para dispositivos móviles */
+
+/* Ajusta el tamaño del texto en la sección de cursos para dispositivos móviles */
+@media (max-width: 768px) {
+    #cursos .fila .proyecto .info {
+        font-size: 14px;
+    }
+}
+
+/* Asegura que los logotipos de LinkedIn y GitHub se muestren en dispositivos móviles en el footer */
+@media (max-width: 768px) {
+    footer .redes a i.fa-linkedin,
+    footer .redes a i.fa-github {
+        display: inline-block;
+        font-size: 24px;
+        margin: 0 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+/* Ajusta el tamaño del título en la sección de cursos para dispositivos móviles */
+@media (max-width: 768px) {
+    #cursos .fila .proyecto .info h3 {
+        font-size: 16px;
+    }
+}
