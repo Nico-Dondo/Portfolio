@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio Nicolás Dondo</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#cursos" onclick="seleccionar(this)">CURSOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                          </ul>
+                          
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/nicolas-dondo/"><i class="fa-brands fa-linkedin"></i><a>
+                                <a href="https://github.com/Nico-Dondo"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Portfolio <span></span> Nicolás Dondo</h2>
+                <a href="#portfolio">Ir al Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/nico.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Nicolás Dondo</span> </h2>
+            <h3>QA Manual y Desarrollador Frontend</h3>
+            <p>Soy un apasionado e inquieto QA Manual con experiencia en proyectos Nacionales e Internacionales. En los
+                mismos, trabajo bajo Metodologías Ágiles, SCRUM específicamente, validando y certificando la Calidad del
+                Software. Mi experiencia incluye la creación y ejecución de casos de prueba, el reporte de bugs y
+                resultados de pruebas, así como también pruebas de Integración, Retest, Regresión, Humo y UAT. Utilizo
+                Jira como Gestor de Proyectos, Postman para realizar pruebas con APIs y Devtools para pruebas visuales.
+                Me considero una persona con buenas capacidades de comunicación, trabajo en equipo y colaboración
+                constante. Siempre busco la innovación y buenas prácticas para poder dar lo mejor de mí en los desafíos
+                que participo.
+            </p>
+
+            <a href="img/CV/Nicolas Dondo CV.pdf">Descargar CV</a>
+            <a href="img/CV/Nicolas Dondo English CV.pdf">Download Resume</a>
+        </div>
+    </section>
+
+
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>QA Manual</p>
+
+            </div>
+
+
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Cypress</p>
+
+            </div>
+
+
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Postman</p>
+
+            </div>
+
+
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Jira</p>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p> <span class="lista"> </span>Scrum</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p> <span class="lista"> </span>Metodología Ägil</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>HTML</p>
+
+            </div>
+
+
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Java Script</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <br>
+        <br>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/martinez.jpg" alt="">
+                <div class="info">
+                    <button class="button"
+                        onclick="location.href='img/Proyectos/Proyecto Final QA Dondo Nicolas.pdf'">Ver
+                        proyecto</button>
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/mostaza2.jpg" alt="">
+                <div class="info">
+                    <button class="button" onclick="abrirEnlace('img/Video/loom.mp4')">Ver
+                        video</button>
+                    <button class="button"
+                        onclick="abrirEnlace('https://github.com/Nico-Dondo/Mostaza/blob/main/Mostaza/mostaza.cy.js')">Ver
+                        código en GitHub</button>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/pizza.jpg" alt="">
+                <div class="info">
+                    <button class="button" onclick="location.href='img/Proyectos/Prueba_Tecnica.pdf'">Ver
+                        proyecto</button>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/vrvjpg.jpg" alt="">
+                <div class="info">
+                    <button class="button" onclick="location.href='https://www.buenosairesvrv.com.ar/'">Link a la
+                        página</button>
+
+
+                    <div class="descripcion-section" id="descripcion">
+                        <p>Trabajo realizado para <strong>CodeCraze Developers</strong> encargándome de realizar el
+                            testeo integral de página, funcionalidades, trabajando conjuntamente con los
+                            desarrolladores.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+         <!-- SECCION CURSOS -->
+    </section>
+    <section id="cursos">
+        <h3 class="titulo-seccion">CURSOS</h3>
+        <br>
+        <br>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                  
+
+                </div>
+                <img src="./img/confianza-ciberseguridad-900x600.jpg" alt="">
+                <div class="info">
+                    
+                    <a href="./img/CertificadoCiber.png" class="button"
+                        target="_blank">Ciberseguridad</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                   
+
+                </div>
+                <img src="./img/png-transparent-organization-professional-logo-junior-frontend-developer-freelancer-internal-revenue-service-blue-text-trademark.png" alt="">
+                <div class="info">
+                    
+                    <a href="./img/Frontend.png" class="button"
+                        target="_blank">Frontend</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                  
+                </div>
+                <img src="./img/React_logo_wordmark.png" alt="">
+                <div class="info">
+                    
+                    <a href="./img/certificado-curso.png" class="button"
+                        target="_blank">React</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                   
+
+                </div>
+                <img src="./img/JavaScript-Logo.png" alt="">
+                <div class="info">
+                    
+                    <a href="./img/JavaScript.png" class="button"
+                        target="_blank">Java Script</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    
+
+                </div>
+                <img src="./img/html.jpg" alt="">
+                <div class="info">
+                    
+                    <a href="./img/desarrolloweb.png" class="button"
+                        target="_blank">Desarrollo Web</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                   
+                    
+                </div>
+                <img src="./img/cypress_logo_social.png" alt="">
+                <div class="info">
+                    
+                    <a href="./img/CyressUdemy.jpg" class="button"
+                        target="_blank">Cypress Udemy</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    
+                    
+                </div>
+                <img src="./img/postman-platform-for-api-development-social-card-1.jpg" alt="">
+                <div class="info">
+                    
+                    <a href="./img/Postman.jpg" class="button"
+                        target="_blank">Postman Udemy</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                   
+
+                </div>
+                <img src="./img/Udemy_logo.svg.png" alt="">
+                <div class="info">
+                     <a href="./img/programaciontester.jpg" class="button"
+                        target="_blank">Programación para Testers</a>
+                </div>
+            </div>
+           
+            <div class="proyecto">
+                <div class="overlay">
+                   
+
+                </div>
+                <img src="./img/pushing_it.jpg" alt="">
+                <div class="info">
+                     <a href="./img/pushing-cypress.png" class="button"
+                        target="_blank">Automation con Cypress</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                   
+
+                </div>
+                <img src="./img/utn_ba.png" alt="">
+                <div class="info">
+                     <a href="./img/utn-testing.png" class="button"
+                        target="_blank">Testing Avanzado</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                   
+
+                </div>
+                <img src="./img/python.png" alt="">
+                <div class="info">
+                     <a href="./img/coder-python.png" class="button"
+                        target="_blank">Python</a>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+
+        <div class="contenedor-form">
+            <form id="formulario" action="mailto:nicodondo1980@gmail.com" method="get">
+                <!-- Aquí está el botón de envío que deseas mantener -->
+                <button type="submit" class="btn-enviar">Contacto</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/nicolas-dondo/"><i class="fa-brands fa-linkedin"></i><a>
+                    <a href="https://github.com/Nico-Dondo"><i class="fa-brands fa-github"></i></a>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
