@@ -56,7 +56,7 @@ function efectoHabilidades() {
   
   
   function enviarCorreo() {
-    const destinatario = "nicodondo1980@gmail.com.com"; // Reemplaza con tu dirección de correo electrónico
+    const destinatario = "nicodondo1980@gmail.com"; 
     const asunto = "Mensaje de un visitante del sitio";
     const cuerpo = "Este es el cuerpo del mensaje.";
 
@@ -80,7 +80,7 @@ function redirectToCertification(certificacion) {
       case 'certificacion2':
           window.location.href = "URL_CERTIFICACION_2";
           break;
-      // Agrega más casos para las otras certificaciones
+      
 
       default:
           break;
